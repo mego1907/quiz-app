@@ -1,0 +1,80 @@
+:root {
+  --main-color: #06113c;
+}
+
+$mobile-width: 768px;
+
+.navbar {
+  width: 100%;
+  height: 80px;
+
+  background-color: var(--main-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: $mobile-width) {
+    height: 60px;
+
+    &__logo {
+      display: none;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 20px;
+    color: #eeeeee;
+    line-height: 80px;
+  }
+
+  &__content {
+    &__btns {
+      button {
+        padding: 10px 22px;
+        margin-left: 10px;
+
+        border: 1px solid #eee;
+        border-radius: 4px;
+
+        font-size: 16px;
+        color: var(--main-color);
+      }
+    }
+  }
+
+  &__user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+
+    img {
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    p {
+      color: #eee;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+      margin-right: 5px;
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

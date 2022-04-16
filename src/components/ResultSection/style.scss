@@ -1,0 +1,30 @@
+:root {
+  --main-color: #06113c;
+}
+
+.result {
+  &__content {
+    text-align: center;
+
+    h3 {
+      font-size: 3rem;
+      color: var(--main-color);
+    }
+
+    p {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #f55353;
+
+      margin: 2rem 0;
+    }
+
+    button {
+      padding: 12px 50px;
+      background-color: var(--main-color);
+      border: 1px solid var(--main-color);
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+}
