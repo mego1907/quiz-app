@@ -3,8 +3,7 @@ import "./style.scss"
 
 const LoginToSeeTheQuestions = () => {
 
-    const { loginWithRedirect } = useAuth0();
-
+  const { loginWithRedirect } = useAuth0();
 
   return (
     <div className="login-first">

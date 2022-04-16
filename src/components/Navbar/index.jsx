@@ -6,7 +6,6 @@ const Navbar = () => {
 
   const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
 
-
   return (
     <div className="navbar">
       <div className="container">
